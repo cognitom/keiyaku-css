@@ -55,7 +55,7 @@ HTMLを手書きする場合は、次の要素を使います。
 
 ## 使用例
 
-- [建物賃貸借契約書](example/contract) ([markdown](https://github.com/cognitom/keiyaku-css/blob/master/example/contract.md))
+- [建物賃貸借契約書](https://cognitom.github.io/keiyaku-css/example/contract) ([markdown](https://github.com/cognitom/keiyaku-css/blob/master/example/contract.md))
 
 ## ライセンス
 
