@@ -53,6 +53,10 @@ HTMLを手書きする場合は、次の要素を使います。
 - 署名欄・見出し: `####`
 - 署名欄・項目: `-` (最後の項目には、自動的に`印`マークが付きます)
 
+## 使用例
+
+- [建物賃貸借契約書](example/contract) ([markdown](https://github.com/cognitom/keiyaku-css/blob/master/example/contract.md))
+
 ## ライセンス
 
 MIT © Tsutomu Kawamura
