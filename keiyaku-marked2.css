@@ -1,0 +1,116 @@
+/**
+ * Marked2
+ * http://marked2app.com/
+ *
+ * To add a theme:
+ *   1. Add this file to /Users/cognitom/Library/Application Support/Marked 2/Custom CSS
+ *   2. Restart the app.
+ */
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font: normal 10pt/1.5em serif;
+}
+
+body > #wrapper {
+  margin: 0;
+  padding: 5em 0;
+}
+
+#wrapper {
+  counter-reset: keiyaku-chapter;
+  position: relative;
+  font-family: serif;
+}
+#wrapper > h1 {
+  text-align: center;
+}
+#wrapper > h1:first-child {
+  margin-top: 0;
+}
+#wrapper > h2 {
+  counter-reset: keiyaku-paragraph;
+  counter-increment: keiyaku-chapter;
+}
+#wrapper > h2::before {
+  content: "\7B2C" counter(keiyaku-chapter) "\6761\FF08";
+}
+#wrapper > h2::after {
+  content: "\FF09";
+}
+#wrapper > p {
+  counter-increment: keiyaku-paragraph;
+  text-indent: 1em;
+  padding-left: 1em;
+}
+#wrapper > h1 + p,
+#wrapper > h2 + p,
+#wrapper > hr + p,
+#wrapper > p:first-of-type {
+  text-indent: 0;
+  padding-left: 0;
+}
+#wrapper > p::before {
+  content: counter(keiyaku-paragraph) " ";
+  font-weight: bold;
+  margin-left: -2em;
+  margin-right: 1em;
+}
+#wrapper > h1 + p::before,
+#wrapper > h2 + p::before,
+#wrapper > hr + p::before,
+#wrapper > p:first-of-type::before {
+  content: none;
+}
+#wrapper > ul {
+  padding: 0 0 0 2.5em;
+}
+#wrapper > ol {
+  list-style: none;
+  counter-reset: keiyaku-ordered-list;
+  padding: 0 0 0 2.5em;
+}
+#wrapper > ol > li {
+  counter-increment: keiyaku-ordered-list;
+  text-indent: -2.5em;
+}
+#wrapper > ol > li::before {
+  content: "\FF08" counter(keiyaku-ordered-list) "\FF09";
+}
+#wrapper > hr {
+  border: none;
+  border-top: 1px solid black;
+  margin: 2em 0;
+}
+#wrapper > h4 {
+  position: absolute;
+  margin: 0;
+  right: 30em;
+  font-size: 100%;
+}
+#wrapper > h4 + ul {
+  margin: 0 0 2em auto;
+  width: 28em;
+  list-style: none;
+}
+#wrapper > h4 + ul > li:last-child::after {
+  content: "\329E";
+  position: absolute;
+  right: 1em;
+}
+#wrapper > blockquote {
+  border: 1px solid black;
+  padding: .5em 1.5em;
+  margin: 1em 0 1.5em;
+}
+
+
+@media print {
+  body {
+    overflow: auto;
+  }
+
+  img, pre, blockquote, table, figure, p {
+    page-break-inside: avoid;
+  }
+}

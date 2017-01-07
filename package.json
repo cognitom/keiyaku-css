@@ -6,7 +6,8 @@
     "keiyaku.css"
   ],
   "scripts": {
-    "start": "felt --recipe minimal --src example --debug --update always"
+    "start": "felt --recipe minimal --src example --debug --update always",
+    "build": "node --require reify build.js"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,7 @@
     "felt-recipe-minimal": "^0.2.0",
     "marked": "^0.3.6",
     "normalize-css": "^2.3.1",
+    "reify": "^0.4.4",
     "whatwg-fetch": "^2.0.1"
   }
 }

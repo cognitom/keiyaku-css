@@ -1,0 +1,30 @@
+/**
+ * Marked2
+ * http://marked2app.com/
+ *
+ * To add a theme:
+ *   1. Add this file to /Users/cognitom/Library/Application Support/Marked 2/Custom CSS
+ *   2. Restart the app.
+ */
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font: normal 10pt/1.5em serif;
+}
+
+body > #wrapper {
+  margin: 0;
+  padding: 5em 0;
+}
+
+{{ content }}
+
+@media print {
+  body {
+    overflow: auto;
+  }
+
+  img, pre, blockquote, table, figure, p {
+    page-break-inside: avoid;
+  }
+}

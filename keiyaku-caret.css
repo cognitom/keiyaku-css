@@ -1,0 +1,119 @@
+/**
+ * Caret
+ * https://caret.io/
+ *
+ * To add a theme:
+ *   1. Add this file to /Users/cognitom/Library/Application Support/Caret/Themes
+ *   2. Restart the app.
+ */
+
+ ::selection {
+   background: hsl(210, 40%, 90%);
+ }
+
+:host {
+  background: #fff;
+  color: #000;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 40rem;
+}
+
+.content {
+  counter-reset: keiyaku-chapter;
+  position: relative;
+  font-family: serif;
+}
+.content > h1 {
+  text-align: center;
+}
+.content > h1:first-child {
+  margin-top: 0;
+}
+.content > h2 {
+  counter-reset: keiyaku-paragraph;
+  counter-increment: keiyaku-chapter;
+}
+.content > h2::before {
+  content: "\7B2C" counter(keiyaku-chapter) "\6761\FF08";
+}
+.content > h2::after {
+  content: "\FF09";
+}
+.content > p {
+  counter-increment: keiyaku-paragraph;
+  text-indent: 1em;
+  padding-left: 1em;
+}
+.content > h1 + p,
+.content > h2 + p,
+.content > hr + p,
+.content > p:first-of-type {
+  text-indent: 0;
+  padding-left: 0;
+}
+.content > p::before {
+  content: counter(keiyaku-paragraph) " ";
+  font-weight: bold;
+  margin-left: -2em;
+  margin-right: 1em;
+}
+.content > h1 + p::before,
+.content > h2 + p::before,
+.content > hr + p::before,
+.content > p:first-of-type::before {
+  content: none;
+}
+.content > ul {
+  padding: 0 0 0 2.5em;
+}
+.content > ol {
+  list-style: none;
+  counter-reset: keiyaku-ordered-list;
+  padding: 0 0 0 2.5em;
+}
+.content > ol > li {
+  counter-increment: keiyaku-ordered-list;
+  text-indent: -2.5em;
+}
+.content > ol > li::before {
+  content: "\FF08" counter(keiyaku-ordered-list) "\FF09";
+}
+.content > hr {
+  border: none;
+  border-top: 1px solid black;
+  margin: 2em 0;
+}
+.content > h4 {
+  position: absolute;
+  margin: 0;
+  right: 30em;
+  font-size: 100%;
+}
+.content > h4 + ul {
+  margin: 0 0 2em auto;
+  width: 28em;
+  list-style: none;
+}
+.content > h4 + ul > li:last-child::after {
+  content: "\329E";
+  position: absolute;
+  right: 1em;
+}
+.content > blockquote {
+  border: 1px solid black;
+  padding: .5em 1.5em;
+  margin: 1em 0 1.5em;
+}
+
+
+@media print {
+  :host {
+    font-size: 14px !important;
+  }
+}

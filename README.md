@@ -69,6 +69,13 @@ HTMLを手書きする場合は、次の要素を使います。
 
 - [建物賃貸借契約書](https://cognitom.github.io/keiyaku-css/example/contract) ([markdown](https://github.com/cognitom/keiyaku-css/blob/master/example/contract.md))
 
+## エディタで使う
+
+下記のテーマファイルを、所定のフォルダに読み込みます。
+
+- [テーマファイル for Caret](https://raw.githubusercontent.com/cognitom/keiyaku-css/master/keiyaku-caret.css)
+- [テーマファイル for Marked 2](https://raw.githubusercontent.com/cognitom/keiyaku-css/master/keiyaku-marked2.css)
+
 ## ライセンス
 
 MIT © Tsutomu Kawamura
