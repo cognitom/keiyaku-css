@@ -14,10 +14,10 @@
   counter-increment: keiyaku-chapter;
 }
 .keiyaku > h2::before {
-  content: "第" counter(keiyaku-chapter) "条（";
+  content: "\7B2C" counter(keiyaku-chapter) "\6761\FF08";
 }
 .keiyaku > h2::after {
-  content: "）";
+  content: "\FF09";
 }
 .keiyaku > p {
   counter-increment: keiyaku-paragraph;
@@ -56,7 +56,7 @@
   text-indent: -2.5em;
 }
 .keiyaku > ol > li::before {
-  content: "（" counter(keiyaku-ordered-list) "）";
+  content: "\FF08" counter(keiyaku-ordered-list) "\FF09";
 }
 .keiyaku > hr {
   border: none;
@@ -75,7 +75,7 @@
   list-style: none;
 }
 .keiyaku > h4 + ul > li:last-child::after {
-  content: "㊞";
+  content: "\329E";
   position: absolute;
   right: 1em;
 }
