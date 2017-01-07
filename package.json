@@ -1,0 +1,29 @@
+{
+  "name": "keiyaku-css",
+  "version": "1.0.0",
+  "description": "Crazy Style Formatter for Japanese Contract Document",
+  "main": "index.js",
+  "scripts": {
+    "start": "felt --recipe minimal --src example --debug --update always"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cognitom/keiyaku-css.git"
+  },
+  "keywords": [
+    "css"
+  ],
+  "author": "Tsutomu Kawamura",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cognitom/keiyaku-css/issues"
+  },
+  "homepage": "https://github.com/cognitom/keiyaku-css#readme",
+  "devDependencies": {
+    "felt": "^0.3.1",
+    "felt-recipe-minimal": "^0.2.0",
+    "marked": "^0.3.6",
+    "normalize-css": "^2.3.1",
+    "whatwg-fetch": "^2.0.1"
+  }
+}
