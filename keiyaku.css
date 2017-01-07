@@ -1,6 +1,7 @@
 .keiyaku {
   counter-reset: keiyaku-chapter;
   position: relative;
+  font-family: serif;
 }
 .keiyaku > h1 {
   text-align: center;
