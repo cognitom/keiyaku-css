@@ -21,7 +21,13 @@ Unfortunately, the style in Japanese contract document is totally crazy. I hope 
 $ npm install --save keiyaku-css
 ```
 
-HTMLファイルにて、本件ライブラリを使用したいセクションに、`keiyaku`クラスを付加します。(`div`タグなどでも構いません)
+HTMLの`HEAD`内にCSSファイルを読み込みます。
+
+```html
+<link rel="stylesheet" href="path/to/keiyaku.css">
+```
+
+本件ライブラリを使用したいセクションに、`keiyaku`クラスを付加します。(`div`タグなどでも構いません)
 
 ```html
 <section class="keiyaku"></section>
