@@ -15,7 +15,7 @@ Unfortunately, the style in Japanese contract document is totally crazy. I hope 
 
 ## インストール
 
-ここからCSSファイルをダウンロードするか、npm経由でインストールします。
+[ここからCSSファイルをダウンロード](https://raw.githubusercontent.com/cognitom/keiyaku-css/master/keiyaku.css)するか、npm経由でインストールします。
 
 ```bash
 $ npm install --save keiyaku-css
