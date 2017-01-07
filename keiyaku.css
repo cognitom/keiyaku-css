@@ -25,7 +25,8 @@
 }
 .keiyaku > h1 + p,
 .keiyaku > h2 + p,
-.keiyaku > hr + p {
+.keiyaku > hr + p,
+.keiyaku > p:first-of-type {
   text-indent: 0;
   padding-left: 0;
 }
@@ -37,7 +38,8 @@
 }
 .keiyaku > h1 + p::before,
 .keiyaku > h2 + p::before,
-.keiyaku > hr + p::before {
+.keiyaku > hr + p::before,
+.keiyaku > p:first-of-type::before {
   content: none;
 }
 .keiyaku > ul {
@@ -75,4 +77,9 @@
   content: "㊞";
   position: absolute;
   right: 1em;
+}
+.keiyaku > blockquote {
+  border: 1px solid black;
+  padding: .5em 1.5em;
+  margin: 1em 0 1.5em;
 }
