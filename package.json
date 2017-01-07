@@ -2,7 +2,9 @@
   "name": "keiyaku-css",
   "version": "1.0.0",
   "description": "Crazy Style Formatter for Japanese Contract Document",
-  "main": "index.js",
+  "files": [
+    "keiyaku.css"
+  ],
   "scripts": {
     "start": "felt --recipe minimal --src example --debug --update always"
   },
@@ -18,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/cognitom/keiyaku-css/issues"
   },
-  "homepage": "https://github.com/cognitom/keiyaku-css#readme",
+  "homepage": "https://cognitom.github.io/keiyaku-css/",
   "devDependencies": {
     "felt": "^0.3.1",
     "felt-recipe-minimal": "^0.2.0",
