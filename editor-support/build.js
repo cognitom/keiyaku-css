@@ -1,5 +1,7 @@
 import fs from 'fs'
+import { join } from 'path'
 
+const dir = __dirname
 const original = fs.readFileSync('keiyaku.css', 'utf8')
 const themes = {
   caret: original.replace(/\.keiyaku/g, '.content'),
@@ -7,7 +9,7 @@ const themes = {
 }
 
 for (name in themes) {
-  const tmpl = fs.readFileSync(`editor-support/${ name }.css`, 'utf8')
+  const tmpl = fs.readFileSync(join(dir, 'tmpl', `${ name }.css`), 'utf8')
   const css = tmpl.replace('{{ content }}', themes[name])
-  fs.writeFileSync(`keiyaku-${ name }.css`, css)
+  fs.writeFileSync(join(dir, `keiyaku-${ name }.css`), css)
 }

@@ -7,7 +7,7 @@
   ],
   "scripts": {
     "start": "felt --recipe minimal --src example --debug --update always",
-    "build": "node --require reify build.js"
+    "build": "node --require reify editor-support/build.js"
   },
   "repository": {
     "type": "git",

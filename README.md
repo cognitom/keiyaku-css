@@ -73,8 +73,8 @@ HTMLを手書きする場合は、次の要素を使います。
 
 下記のテーマファイルを、所定のフォルダに読み込みます。
 
-- [テーマファイル for Caret](https://raw.githubusercontent.com/cognitom/keiyaku-css/master/keiyaku-caret.css)
-- [テーマファイル for Marked 2](https://raw.githubusercontent.com/cognitom/keiyaku-css/master/keiyaku-marked2.css)
+- [テーマファイル for Caret](https://raw.githubusercontent.com/cognitom/keiyaku-css/master/editor-support/keiyaku-caret.css)
+- [テーマファイル for Marked 2](https://raw.githubusercontent.com/cognitom/keiyaku-css/master/editor-support/keiyaku-marked2.css)
 
 ## ライセンス
 
